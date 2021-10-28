@@ -6,7 +6,7 @@ rule silent_banker : banker
         in_the_wild = true
 
     strings:
-        $a = {"example" nocase}
+        $a = "example" nocase
         $b = {8D 4D B0 2B C1 83 C0 27 99 6A 4E 59 F7 F9}
         $c = "UVODFRYSIHLNWPEJXQZAKCBGMT"
 
