@@ -2,7 +2,7 @@
 
 rule Monero {
     strings:
-        $cryptocurr1 = /4[0-9AB][1-9A-HJ-NP-Za-km-z]{93}/ ascii wide
+        //$cryptocurr1 = /4[0-9AB][1-9A-HJ-NP-Za-km-z]{93}/ ascii wide
         $cryptocurr2 = "xmr" nocase
         $cryptocurr3 = "monero" nocase
     condition:

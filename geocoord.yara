@@ -1,7 +1,7 @@
-rule Decimal_NSEW {
-    strings: $decimal_nsew = /[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°?\s*[NSEW][,\s]*[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°?\s*[NSEW]/ ascii wide
-    condition: 1 of them
-}
+// rule Decimal_NSEW {
+//     strings: $decimal_nsew = /[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°?\s*[NSEW][,\s]*[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°?\s*[NSEW]/ ascii wide
+//     condition: 1 of them
+// }
 
 rule Decimal_Degrees {
     strings: $decimal_degrees = /[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°[,\s]*[-+]?[0-1]?[0-9]{1,2}\.\d{1,8}°/ ascii wide
@@ -26,9 +26,9 @@ rule Degrees_Minutes_Seconds {
     condition: 1 of them
 }
 
-rule MGRS {
-    strings: $mgrs = /[1-6]?\d[C-X]\s?[A-Z]{2}\s?(\d\s?\d){4,5}/ ascii wide
-    condition: 1 of them
-}
+// rule MGRS {
+//     strings: $mgrs = /[1-6]?\d[C-X]\s?[A-Z]{2}\s?(\d\s?\d){4,5}/ ascii wide
+//     condition: 1 of them
+// }
 
 
