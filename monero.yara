@@ -6,5 +6,6 @@ rule Monero {
         $cryptocurr2 = "xmr" nocase
         $cryptocurr3 = "monero" nocase
     condition:
-        $cryptocurr1 and ($cryptocurr2 or $cryptocurr3)
+        //$cryptocurr1 and ($cryptocurr2 or $cryptocurr3)
+        any of them
 }
