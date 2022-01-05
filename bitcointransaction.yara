@@ -1,10 +1,11 @@
-// Updated on Wed Oct 28 3:30:50 2020
+// Updated on Wed Dec 28 2021
 
 rule BitcoinTransaction {
     strings:
-        $bitcointransaction1 = /[a-fA-F0-9]{64}/ ascii wide
-        $bitcointransaction2 = "btc" nocase
-        $bitcointransaction3 = "bitcoin" nocase
+        $cryptocurr1 = /\b[a-fA-F0-9]{64}\b/ ascii wide
+        $cryptocurr2 = "btc" 
+        $cryptocurr3 = "bitcoin" nocase
+        $cryptocurr4 = "BTC"
     condition:
-        $bitcointransaction1 and ($bitcointransaction2 or $bitcointransaction3)
+        $cryptocurr1 and ($cryptocurr2 or $cryptocurr3 or $cryptocurr4)
 }
