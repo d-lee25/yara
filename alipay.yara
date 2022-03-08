@@ -11,6 +11,8 @@ rule Alipay {
         $string7 = /alipaygphone/ nocase 
         $string8 = /alipayobjects/ nocase 
         $string9 = /wallet-android-release-release-alipay/ nocase 
+        $string10 = /alipaydeposit/ nocase
+	$string11 = /alipay deposit/ nocase
     condition:
         any of ($string*)
 }
