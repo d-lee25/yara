@@ -9,7 +9,9 @@ rule Webmoney {
         $string5 = /WM-purse/ nocase
         $string6 = /webmoney transfer/ nocase
         $string7 = /balanceWebMoney/ nocase 
-        
+       	$string8 = /webmoney keeper/ nocase
+	    $string9 = /webmoney activate notification/ nocase
+	    $string10 = /webmoney keep/ nocase
     condition:
         any of ($string*)
 }
