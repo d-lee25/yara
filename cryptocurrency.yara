@@ -28,6 +28,3 @@ rule Ripple {
     condition:
         1 of them
 }
-
-
-
